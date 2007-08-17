@@ -20,7 +20,8 @@ URL:		http://www.gnu.org/software/automake/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
-Prereq:		/sbin/install-info
+Requires(post):	info-install
+Requires(preun):	info-install
 Requires:	/usr/sbin/update-alternatives
 Conflicts:	automake1.5
 Obsoletes:	automake <= 1.4-23.p6.mdk
