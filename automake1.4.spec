@@ -22,7 +22,7 @@ BuildArch:	noarch
 
 Requires(post):	info-install
 Requires(preun):	info-install
-Requires:	/usr/sbin/update-alternatives
+Requires:	update-alternatives
 Conflicts:	automake1.5
 Obsoletes:	automake <= 1.4-23.p6.mdk
 
