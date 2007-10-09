@@ -7,7 +7,7 @@
 %define docheck 1
 %{?_without_check: %global docheck 0}
 
-Summary:	A GNU tool for automatically creating Makefiles.
+Summary:	A GNU tool for automatically creating Makefiles
 Name:		%{pkgname}%{amversion}
 Version:	%{version}
 Release:	%{release}
