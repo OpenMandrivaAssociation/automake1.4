@@ -17,7 +17,6 @@ Source:		ftp://ftp.gnu.org/gnu/automake/%{pkgname}-%{amversion}-%{patchlevel}.ta
 Patch0:		automake-1.4p6-infofiles.patch
 Patch1:		automake-1.4-p6-stdc-headers.patch
 URL:		http://www.gnu.org/software/automake/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
 Requires(post):	info-install
