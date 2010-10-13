@@ -2,7 +2,7 @@
 %define pkgname automake
 %define patchlevel p6
 %define version 1.4.0.%{patchlevel}
-%define release %mkrel 6
+%define release %mkrel 7
 
 %define docheck 1
 %{?_without_check: %global docheck 0}
@@ -16,6 +16,7 @@ Group:		Development/Other
 Source:		ftp://ftp.gnu.org/gnu/automake/%{pkgname}-%{amversion}-%{patchlevel}.tar.bz2
 Patch0:		automake-1.4p6-infofiles.patch
 Patch1:		automake-1.4-p6-stdc-headers.patch
+Patch2:		automake-1.4-p6-CVE-2009-4029.diff
 URL:		http://www.gnu.org/software/automake/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
@@ -38,6 +39,7 @@ install Automake, you will also need to install GNU's Autoconf package.
 %setup -q -n %{pkgname}-%{amversion}-%{patchlevel}
 %patch0 -p1 -b .parallel
 %patch1 -p1 -b .gcc3.4
+%patch2 -p1 -b .CVE-2009-4029
 
 %build
 %configure
