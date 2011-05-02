@@ -2,7 +2,7 @@
 %define pkgname automake
 %define patchlevel p6
 %define version 1.4.0.%{patchlevel}
-%define release %mkrel 7
+%define release %mkrel 8
 
 %define docheck 0
 %{?_without_check: %global docheck 0}
