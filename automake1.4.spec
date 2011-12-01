@@ -56,17 +56,17 @@ make check	# VERBOSE=1
 %endif
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall
 
-install -D -m 644 %{name}.info $RPM_BUILD_ROOT%{_infodir}/%{name}.info
+install -D -m 644 %{name}.info %{buildroot}%{_infodir}/%{name}.info
 
-rm -f $RPM_BUILD_ROOT/%{_bindir}/{automake,aclocal}
+rm -f %{buildroot}/%{_bindir}/{automake,aclocal}
 
-mkdir -p $RPM_BUILD_ROOT/%{_datadir}/aclocal
+mkdir -p %{buildroot}/%{_datadir}/aclocal
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %_install_info %{name}.info
