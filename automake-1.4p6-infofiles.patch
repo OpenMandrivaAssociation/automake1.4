@@ -1,0 +1,28 @@
+--- automake-1.4-p6/automake.texi.parallel	1999-01-06 21:01:26.000000000 +0800
++++ automake-1.4-p6/automake.texi	2004-05-18 22:49:20.832068424 +0800
+@@ -1,20 +1,20 @@
+ \input texinfo   @c -*-texinfo-*-
+ @c %**start of header
+-@setfilename automake.info
+-@settitle automake
++@setfilename automake1.4.info
++@settitle automake1.4
+ @setchapternewpage off
+ @c %**end of header
+ 
+ @include version.texi
+ 
+-@dircategory GNU admin
++@dircategory Software development
+ @direntry
+-* automake: (automake).		Making Makefile.in's
++* automake1.4: (automake1.4).		Making Makefile.in's
+ @end direntry
+ 
+ @dircategory Individual utilities
+ @direntry
+-* aclocal: (automake)Invoking aclocal.          Generating aclocal.m4
++* aclocal-1.4: (automake1.4)Invoking aclocal.          Generating aclocal.m4
+ @end direntry
+ 
+ @ifinfo
