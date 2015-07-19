@@ -9,7 +9,7 @@
 Summary:	A GNU tool for automatically creating Makefiles
 Name:		%{pkgname}%{amversion}
 Version:	%{version}
-Release:	16
+Release:	17
 License:	GPL
 Group:		Development/Other
 Source0:	ftp://ftp.gnu.org/gnu/automake/%{pkgname}-%{amversion}-%{patchlevel}.tar.bz2
