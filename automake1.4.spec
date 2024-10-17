@@ -17,7 +17,7 @@ Source1:	automake1.4.rpmlintrc
 Patch0:		automake-1.4p6-infofiles.patch
 Patch1:		automake-1.4-p6-stdc-headers.patch
 Patch2:		automake-1.4-p6-CVE-2009-4029.diff
-URL:		http://www.gnu.org/software/automake/
+URL:		https://www.gnu.org/software/automake/
 BuildArch:	noarch
 
 Requires:	update-alternatives
