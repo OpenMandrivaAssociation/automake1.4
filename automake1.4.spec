@@ -24,6 +24,11 @@ Requires:	update-alternatives
 Conflicts:	automake1.5
 Obsoletes:	automake <= 1.4-23.p6.mdk
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Automake is a tool for automatically generating Makefiles compliant with the
 GNU Coding Standards.
